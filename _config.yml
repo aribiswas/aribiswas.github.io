@@ -32,7 +32,21 @@ linkedin_username: biswasic
 # Build settings
 #theme: minima
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-seo-tag
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-archives
   - jekyll-seo-tag
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,8 +67,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-minima:
-  skin: auto
+#minima:
+#  skin: auto
 remote_theme: daattali/beautiful-jekyll@6.0.1
 
 ###############################################
@@ -103,7 +117,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+#rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -144,7 +158,7 @@ post_search: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "rl,robotics,ai,artificial intelligence,software engineering,programming,python,matlab"
+keywords: "rl,robotics,ai,artificial intelligence,software engineering,reinforcement learning,rl,python,matlab"
 
 ######################################
 # --- Colours / background image --- #
@@ -187,7 +201,7 @@ footer-hover-col: "#0085A1"
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-#gtag: "G-XXXXXXXXXX"
+gtag: "G-KDT2BM43QG"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""

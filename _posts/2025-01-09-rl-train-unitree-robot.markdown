@@ -2,9 +2,12 @@
 layout: post
 title: "Training a Unitree Quadruped Robot with MuJoCo and MATLAB: A Step-by-Step Guide"
 subtitle: A Beginner's Adventure into Robotics and AI
+excerpt: In this comprehensive guide, we explore the process of training a Unitree Go1 quadruped robot using reinforcement learning with MuJoCo and MATLAB. We cover prerequisites, creating simulation models, integrating environments, designing a Soft Actor-Critic (SAC) agent, and training and evaluating the RL agent. This post is perfect for beginners and experienced practitioners interested in robotics, reinforcement learning, and AI.
+seo_title: "Training a Unitree Quadruped Robot with MuJoCo and MATLAB: A Step-by-Step Guide"
+seo_description: explore the process of training a Unitree Go1 quadruped robot using reinforcement learning with MuJoCo and MATLAB.
 gh-repo: aribiswas/mujoco-matlab
 gh-badge: [star, fork, follow]
-tags: [robotics, reinforcement learning, mujoco, MATLAB]
+tags: [robotics, reinforcement learning, mujoco, gymnasium, MATLAB]
 thumbnail-img: assets/2025-01-09-rl-train-unitree-robot/img-6.png
 date: 2025-01-09 00:00:00 -0500
 categories: jekyll update
