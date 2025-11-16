@@ -326,6 +326,8 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - CLAUDE.md
+  - SEO_IMPROVEMENTS.md
 
 plugins:
   - jekyll-paginate
