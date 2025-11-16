@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://aribiswas.github.io/sitemap.xml
+
+# Block asset directories that don't need indexing
+Disallow: /assets/fonts/
+Disallow: /assets/katex/

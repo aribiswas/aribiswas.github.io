@@ -3,4 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Ari Biswas Blog
+subtitle: Exploring AI, Robotics, and Software Engineering
 ---

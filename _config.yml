@@ -22,10 +22,10 @@ title: Ari Biswas Blog
 author: Ari Biswas
 email: aribiswasblog@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I write about topics on artificial intelligence and software engineering.
+  Technical blog by Ari Biswas covering cutting-edge topics in artificial intelligence, robotics, reinforcement learning, and software engineering.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://aribiswas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+url: "https://aribiswas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: arioutofoffice
 github_username: aribiswas
 linkedin_username: biswasic
 
@@ -88,6 +88,7 @@ navbar-links:
 social-network-links:
   email: "aribiswasblog@gmail.com"
   rss: true # remove this line if you don't want to show an RSS link at the bottom
+  twitter: arioutofoffice
   github: aribiswas
   linkedin: biswasic
 #  medium: yourname
