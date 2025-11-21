@@ -20,6 +20,8 @@ date: 2025-11-16 10:00:00 -0500
 ext-js: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 ---
 
+![Image](../assets/2025-11-16-rl-real-world-systems/pong.gif)
+
 Reinforcement learning has a reputation problem. In the public imagination, it is still mostly about game‑playing agents that learn to beat Atari, Go, or Dota. Meanwhile, almost every physical system that matters - factories, aircraft, power grids, hospitals - runs on control theory and decades‑old feedback loops. Somewhere, a control room operator is watching a trend chart at 3 a.m., hoping the controller behaves; that is the world RL is trying to enter.
 
 The interesting story is not **_“RL will replace control”_**. It is almost the opposite. As RL moves into the real world, the winning pattern is a **_careful blend_** of classical control, domain models, and learning, usually wrapped around systems that were already running long before anyone said “deep RL.”
@@ -68,6 +70,7 @@ What shows up on the ground is not a wave of pure RL controllers displacing ever
 Most successful RL deployments follow a conservative, staged approach:
 
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '16px' }}}%%
 flowchart LR
     A["Research<br/>Prototype"] --> B["High-Fidelity<br/>Simulation"]
     B --> C["Digital Twin<br/>Validation"]
@@ -151,6 +154,7 @@ This mix keeps the parts of the system that must never fail under techniques wit
 The diagram below illustrates the standard layering pattern found in most production RL systems:
 
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '16px' }}}%%
 flowchart TD
     RL["<b>RL Layer</b><br/>Setpoints, Strategy, Adaptation<br/>• Long-term optimization<br/>• Learns from data<br/>• Slower timescale"]
     Classical["<b>Classical Control Layer</b><br/>PID, MPC, LQR<br/>• Safety guarantees<br/>• Real-time execution<br/>• Fast inner loops"]
@@ -282,6 +286,7 @@ and more
 The flowchart below guides you through the key questions to determine whether RL is worth pursuing for your system:
 
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '16px' }}}%%
 flowchart TD
     Start([Is RL worth it<br/>for my system?]) --> Q1{Do you have a<br/>high-fidelity simulator<br/>or rich historical data?}
 
@@ -352,6 +357,7 @@ Over the next few years, RL is likely to remain a specialized tool rather than a
 ### RL Adoption Maturity Across Domains (2025)
 
 ```mermaid
+%%{init: {'themeVariables': { 'fontSize': '16px' }}}%%
 graph TB
     subgraph MP["<b>Mature Production</b><br/><i>2016-2021</i>"]
         direction TB
