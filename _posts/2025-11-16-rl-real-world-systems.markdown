@@ -48,7 +48,7 @@ What follows is a walk through that blend: where RL actually runs today, why it 
 
 Look at how most organizations use machine learning in production today and you see a familiar picture: supervised models for prediction and ranking, some unsupervised methods for clustering or anomaly detection, and a long tail of rules and scripts. RL shows up rarely, usually in tightly scoped optimization problems where experimentation is cheap.
 
-That stands in sharp contrast to the research literature. Each year, conferences publish thousands of RL papers; new benchmarks appear with regularity; every few months, a new agent matches or surpasses human performance on some game or simulated task. This gap between research and deployment is not caused by a lack of imagination on the industrial side. It is the result of constraints:
+That stands in sharp contrast to the research literature. Each year, conferences publish numerous RL papers; new benchmarks appear with regularity; every few months, a new agent matches or surpasses human performance on some game or simulated task. This gap between research and deployment is not caused by a lack of imagination on the industrial side. It is the result of constraints:
 
 - **Safety:** exploration by trial-and-error is unacceptable when actions can injure people, damage equipment, or violate regulations.
 - **Verification:** regulators and operators want guarantees, or at least understandable failure modes, not just reward curves.
@@ -57,9 +57,9 @@ That stands in sharp contrast to the research literature. Each year, conferences
 
 Over the last few years, three developments have started to narrow the gap without pretending it has vanished:
 
-- High-fidelity simulators (Simulink, MuJoCo, Isaac Gym, digital twins) make it possible to explore policies safely and transfer them with less fine-tuning - essentially, they are simulators close enough to reality that engineers trust them for experiments.
-- Safe and constrained RL methods add explicit limits and stability considerations to learning.
-- Integrated workflows connect Python-based research tooling with model-based design environments (like MATLAB/Simulink) that already sit inside certification and deployment pipelines.
+- **High-fidelity simulators** (Simulink, MuJoCo, Isaac Gym, digital twins) make it possible to explore policies safely and transfer them with less fine-tuning - essentially, they are simulators close enough to reality that engineers trust them for experiments.
+- **Safe and constrained RL methods** add explicit limits and stability considerations to learning.
+- **Integrated workflows** connect Python-based research tooling with model-based design environments (like MATLAB/Simulink) that already sit inside certification and deployment pipelines.
 
 What shows up on the ground is not a wave of pure RL controllers displacing everything else. Instead, there are carefully scoped deployments where RL augments existing control, especially in places where the physics are understood but the operating environment keeps shifting.
 
