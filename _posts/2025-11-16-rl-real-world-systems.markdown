@@ -449,7 +449,3 @@ The common theme across all of them is not "end‑to‑end learning." It is a ca
 16. Waymo (2025). "Autonomous Vehicle Operations Report." Company statistics and deployment data.
 17. DataRoot Labs (2025). "The State of Reinforcement Learning in 2025." Industry analysis report.
 18. Frontiers in Aerospace Engineering (2024). "ML meets aerospace: challenges of certifying airborne AI." _Frontiers_, 10.3389/fpace.2024.1475139.
-
-## Ending notes
-
-This article was written with the help of several deep research AI tools. Note that AI can make mistakes.
