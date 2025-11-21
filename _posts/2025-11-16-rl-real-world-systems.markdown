@@ -362,8 +362,8 @@ graph TB
 
     subgraph AD["<b>Active Deployment</b><br/><i>2022-2024</i>"]
         direction TB
-        HVAC["<b>Building HVAC</b><br/>9-13% energy savings<br/>Digital twin validation"]
-        ROB["<b>Robotics Manipulation</b><br/>Quadruped 11.5 mph<br/>Warehouse picking"]
+        HVAC["<b>Building HVAC</b><br/>~9–22% energy/cooling savings<br/>Digital twin validation"]
+        ROB["<b>Robotics Manipulation</b><br/>RL-trained quadruped locomotion<br/>Warehouse picking"]
         REC["<b>Recommendation Systems</b><br/>Personalization at scale"]
         HVAC ~~~ ROB
         ROB ~~~ REC
@@ -371,9 +371,9 @@ graph TB
 
     subgraph EP["<b>Emerging Production</b><br/><i>2024-2025</i>"]
         direction TB
-        MFG["<b>Manufacturing</b><br/>60%+ fab ML adoption<br/>Yield optimization"]
+        MFG["<b>Manufacturing</b><br/>60%+ fabs using AI/ML<br/>Yield optimization pilots"]
         LOG["<b>Logistics</b><br/>Fleet optimization<br/>Supply chain"]
-        AV["<b>Autonomous Vehicles</b><br/>Waymo 250K rides/week"]
+        AV["<b>Autonomous Vehicles</b><br/>Waymo robotaxi service<br/>Large-scale deployment"]
         SEC["<b>Network Security</b><br/>Red-teaming, 5G testing"]
         MFG ~~~ LOG
         LOG ~~~ AV
@@ -382,7 +382,7 @@ graph TB
 
     subgraph RP["<b>Research & Pilots</b>"]
         direction TB
-        HC["<b>Healthcare</b><br/>Offline RL only<br/>No prospective trials"]
+        HC["<b>Healthcare</b><br/>Mostly offline RL<br/>Early prospective trials (decision support)"]
         AERO["<b>Aerospace Tools</b><br/>Offline trajectory<br/>Advisory systems"]
         GRID["<b>Power Grid</b><br/>Digital twin phase<br/>Stability concerns"]
         HC ~~~ AERO
@@ -434,7 +434,7 @@ The common theme across all of them is not "end‑to‑end learning." It is a ca
 1. Sutton, R. S., & Barto, A. G. (2018). _Reinforcement Learning: An Introduction_. MIT Press.
 2. Dulac‑Arnold, G. et al. (2021). “Challenges of Real‑World Reinforcement Learning.” _Machine Learning_, 110, 2419–2468.
 3. García, J., & Fernández, F. (2015). “A Comprehensive Survey on Safe Reinforcement Learning.” _JMLR_, 16, 1437–1480.
-4. Brunke, L. et al. (2022). “Safe Control and Learning: A Review of Robust, Adaptive, and Safe Control.” _Annual Review of Control, Robotics, and Autonomous Systems_.
+4. Brunke, L. et al. (2022). “Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning.” _Annual Review of Control, Robotics, and Autonomous Systems_.
 5. Evans, R., & Gao, J. (2016). “DeepMind AI Reduces Google Data Centre Cooling Bill by 40%.” DeepMind Blog.
 6. Komorowski, M. et al. (2018). “The Artificial Intelligence Clinician Learns Optimal Treatment Strategies for Sepsis in Intensive Care.” _Nature Medicine_, 24, 1716–1720.
 7. Tobin, J. et al. (2017). “Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World.” _IROS_, 23–30.
