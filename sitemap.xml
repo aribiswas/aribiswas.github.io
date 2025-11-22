@@ -1,0 +1,35 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- assign base = site.url | append: site.baseurl -%}
+
+  {%- comment -%}
+  Include all regular pages except error pages and the sitemap itself.
+  {%- endcomment -%}
+  {%- for page in site.pages -%}
+    {%- unless page.sitemap == false or page.url == "/404.html" or page.url == "/sitemap.xml" -%}
+  <url>
+    <loc>{{ base }}{{ page.url }}</loc>
+    {%- if page.last_modified_at -%}
+    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    {%- elsif page.date -%}
+    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+    {%- endif -%}
+  </url>
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- comment -%}
+  Include all posts.
+  {%- endcomment -%}
+  {%- for post in site.posts -%}
+  <url>
+    <loc>{{ base }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+  {%- endfor -%}
+</urlset>
+
